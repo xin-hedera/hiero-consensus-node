@@ -19,5 +19,5 @@ import com.swirlds.config.api.ConfigProperty;
 @ConfigData("consensus")
 public record ConsensusConfig(
         @ConfigProperty(defaultValue = "26") int roundsNonAncient,
-        @ConfigProperty(defaultValue = "1000") int roundsExpired,
+        @ConfigProperty(defaultValue = "4000") int roundsExpired,
         @ConfigProperty(defaultValue = "12") int coinFreq) {}
